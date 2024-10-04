@@ -11,7 +11,7 @@ export default function Timer({ time, setTime, timerActive }) {
     return () => {
       clearInterval(interval);
     };
-  }, [timerActive],[setTime]); // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timerActive]); // eslint-disable-next-line react-hooks/exhaustive-deps
 
   return <p>Time: {time}s</p>;
 }

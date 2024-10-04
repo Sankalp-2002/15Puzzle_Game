@@ -26,12 +26,12 @@ export default function Game() {
       setTimerActive(false);
     }
     return;
-  }, [moves],[shuffleArray]); // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [moves]); // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const newGame = () => {
     setMoves(0);
     setTimerActive(false);
-    setTime(0);
+    setTime(0);  
     setShuffledArray(shuffleArray());
     setWin(false);
   };
